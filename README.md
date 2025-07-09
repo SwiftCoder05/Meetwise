@@ -1,39 +1,46 @@
-# Automated Meeting Minutes Generator
+# 📝 MeetWise
 
-## Description
-This project is a powerful tool that harnesses the of OpenAI's Whisper ASR and GPT-4 models to automate the process of generating meeting minutes from audio recordings, as well as text summary and key point extraction.
+## 📌 Description
 
-This Python-based application transcribes audio, provides summaries, extracts key points and action items, and performs sentiment analysis.
+This project is a powerful, end-to-end tool that leverages **OpenAI's Whisper ASR** and **GPT-4** models to automate the process of generating structured **meeting minutes** from audio recordings. It provides:
 
-## Requirements
-You should have a basic understanding of Python and an OpenAI API key. You can get an API key [here](https://platform.openai.com/account/api-keys). This project was built using Python 3.11.5.
+- Accurate **transcriptions** using Whisper
+- **Abstract summaries** of the meeting
+- Extraction of **key points** and **action items**
+- **Sentiment analysis** of the discussion
+- Output as a clean **Word document (.docx)**
 
-Create a virtual environment and install the requirements:
+This is ideal for teams, professionals, and organizations aiming to save time and capture critical information from voice meetings or discussions.
+
+---
+
+## 🚀 Features
+
+- 🎙️ **Speech-to-text transcription** using OpenAI Whisper
+- 🧠 **Summarization**, **Key Point Extraction**, and **Sentiment Analysis** using GPT-3.5 / GPT-4
+- 📄 **DOCX export** of the generated minutes
+- ⚙️ Easily extensible for more advanced formatting or integrations
+
+---
+
+## 🛠️ Requirements
+
+- Python 3.11.5 or above
+- OpenAI API key (get it from [platform.openai.com](https://platform.openai.com/account/api-keys))
+
+### 📦 Install Dependencies
+
+Create a virtual environment and install the required packages:
 
 ```bash
 python -m venv venv
-source venv/bin/activate
-pip install openai
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+pip install openai==1.30.1
 pip install python-docx
 pip install python-dotenv
-```
 
-Add your OpenAI API key to the `.env` file.
 
-## Usage
-1. Transcribe Audio with Whisper ASR. Refer to `transcription.py`
-2. Summarize and Analyze Transcript with GPT-3. Refer to `sentiment_analysis.py`
-3. Extract Key Points and Action Items. Refer to `sentiment_analysis.py`
-4. Generate Meeting Minutes. Refer to `meeting_minutes.py`
-5. Save Meeting Minutes as a Word Document. Refer to `save_as_docx.py`
-
-## Optimization and Further Considerations
-- [ ] Improve the accuracy of the Whisper ASR model by training it on a custom dataset.
-- [ ] Experiment with prompt engineering to enhance model performance.
-- [ ] Customize the system messages to provide more context to the GPT-4 model for better results.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Refereces
 - [OpenAI API](https://beta.openai.com/)
