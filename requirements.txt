@@ -1,0 +1,5 @@
+openai
+speechrecognition
+transformers
+pydub
+python-docx
